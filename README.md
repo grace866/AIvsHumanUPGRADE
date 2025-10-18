@@ -1,2 +1,2 @@
-# AIvsHuman
+# AIvsHumanUPGRADE
 Horror themed UPGRADE gamejam
