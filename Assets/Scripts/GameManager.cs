@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using Unity.VisualScripting;
+using UnityEngine.AI;
 
 public class GameManager : MonoBehaviour
 {
@@ -91,7 +92,7 @@ public class GameManager : MonoBehaviour
             {
                 foreach (Human h in Rooms[Room])
                 {
-                    Destroy(h);
+                    h.GetComponent<NavMeshAgent>().speed /= 2;
                 }
                 GasActivated = false;
             }

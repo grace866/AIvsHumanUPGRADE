@@ -7642,7 +7642,7 @@ MonoBehaviour:
   button: {fileID: 26794259}
   panel: {fileID: 410963061}
   maxValue: 100
-  regenerationRate: 40
+  regenerationRate: 80
 --- !u!1 &1211556594
 GameObject:
   m_ObjectHideFlags: 0
