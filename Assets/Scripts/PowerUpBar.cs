@@ -49,16 +49,20 @@ public class PowerUpBar : MonoBehaviour
         }
     }
 
-    public bool TryUsePowerUp(float amount)
+    public void UsePowerUp()
     {
-        if (currentValue >= amount)
-        {
-            currentValue -= amount;
-            UpdateBarUI();
-            panel.SetActive(true);
-            return true;
-        }
-        return false;
+        GameManager.Instance.ActivateGas();
+        currentValue = 0f;
+        UpdateBarUI();
+        panel.SetActive(true);
+        //if (currentValue >= amount)
+        //{
+        //    currentValue -= amount;
+        //    UpdateBarUI();
+        //    panel.SetActive(true);
+        //    return true;
+        //}
+        //return false;
     }
 
     private void UpdateBarUI()
