@@ -5,7 +5,6 @@ using NavMeshPlus.Components;
 public class Door : MonoBehaviour
 {
     public SpriteRenderer doorSprite;
-
     public NavMeshSurface Surface2D;
     private NavMeshModifier navModifier;
     private bool isWalkable = true;
@@ -27,7 +26,7 @@ public class Door : MonoBehaviour
     {
         ToggleWalkability();
     }
-    
+
     public void ToggleWalkability()
     {
         isWalkable = !isWalkable;
@@ -35,11 +34,10 @@ public class Door : MonoBehaviour
         navModifier.area = isWalkable ? 0 : 1; // 0 = walkable, 1 = not walkable
         doorSprite.color = Color.white;
         Surface2D.UpdateNavMesh(Surface2D.navMeshData);
-
         // Optional: Add visual feedback
         Debug.Log($"Door is now {(isWalkable ? "walkable" : "not walkable")}");
     }
-    
+
     public void SetWalkable(bool walkable)
     {
         isWalkable = walkable;

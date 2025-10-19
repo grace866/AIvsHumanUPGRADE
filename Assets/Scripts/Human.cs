@@ -1,21 +1,27 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Human : MonoBehaviour
 {
-    // current code is using the NavMeshAgent to move the human to the target position, which is the computer
     [SerializeField] Transform target;
+    NavMeshAgent agent;
 
-    UnityEngine.AI.NavMeshAgent agent;
-
-    private void Start()
+    void Awake()
     {
-        agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        agent.updateRotation = false;
-        agent.updateUpAxis = false;
+        agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;   // keep if you're doing 2D top-down
+        agent.updateUpAxis = false;     // keep if you're doing 2D top-down
+        agent.autoRepath = true;        // optional; default is true
     }
 
-    private void Update()
+    void Update()
     {
+    if (!target || !agent.isOnNavMesh) return;
+
+    // Re-issue the goal when mesh changed (stale) or path got invalid/partial
+
+        agent.ResetPath();
         agent.SetDestination(target.position);
     }
+
 }
