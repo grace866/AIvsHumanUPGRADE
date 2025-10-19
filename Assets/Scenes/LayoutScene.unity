@@ -411,9 +411,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 479718123}
+      - m_Target: {fileID: 1209015831}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: ActivateGas
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3580,9 +3580,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0edee8197a3449908af6451f5b62c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverPanel: {fileID: 1660576689}
   GasActivated: 0
   Room: 0
+  GasDuration: 30
 --- !u!1 &513890363
 GameObject:
   m_ObjectHideFlags: 0
