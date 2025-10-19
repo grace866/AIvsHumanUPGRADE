@@ -171,7 +171,7 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (Rooms.Count == 0 && !InWinScene)
+        if (Rooms != null && Rooms.Count == 0 && !InWinScene)
         {
             StartCoroutine(switchToWinScene());
         }
