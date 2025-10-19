@@ -4,12 +4,12 @@ using UnityEngine;
 using Unity.VisualScripting;
 using UnityEngine.AI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
-    public GameObject gameOverPanel;
     public Boolean GasActivated;
     public int Room;
     //public int originalSpeed = 2;
@@ -18,7 +18,6 @@ public class GameManager : MonoBehaviour
 
     // Game state management
     private bool isGameOver = false;
-    private bool hasGameOverPanelShown = false;
 
     private Coroutine gasEffectCoroutine;
     public float GasDuration = 30f;
@@ -27,31 +26,21 @@ public class GameManager : MonoBehaviour
         Instance = this;
         Room = 0;
         Rooms = new Dictionary<int, List<Human>>();
-        
-        // Ensure game over panel starts hidden
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(false);
-        }
     }
     
     public void TriggerGameOver()
     {
         // Prevent multiple game over triggers
-        if (isGameOver || hasGameOverPanelShown)
+        if (isGameOver)
             return;
             
         isGameOver = true;
-        hasGameOverPanelShown = true;
         
         // Pause the game
         Time.timeScale = 0;
 
-        // Show the game over panel
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(true);
-        }
+        // Go to game over scene
+        SceneManager.LoadScene("GameOverScene");
         
         Debug.Log("Game Over!");
     }
@@ -66,13 +55,9 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         isGameOver = false;
-        hasGameOverPanelShown = false;
         Time.timeScale = 1;
-        
-        if (gameOverPanel != null)
-        {
-            gameOverPanel.SetActive(false);
-        }
+        // Go to layout scene
+        SceneManager.LoadScene("LayoutScene");
     }
 
     public void AddToRooms(Human h, int room)
