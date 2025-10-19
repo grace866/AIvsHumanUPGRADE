@@ -1,11 +1,17 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
+using Button = UnityEngine.UI.Button;
+using Slider = UnityEngine.UI.Slider;
 
 public class PowerUpBar : MonoBehaviour
 {
     // the slider is the UI element that displays the resource bar, drag the ui component here in inspector
     public Slider slider;
-
+    public string powerup;
+    public Button button;
+    public GameObject panel; // set active or inactive
     
     public float maxValue = 100f;
     // regeneration rate of powerup, variable based on the powerup
@@ -32,6 +38,14 @@ public class PowerUpBar : MonoBehaviour
             currentValue = Mathf.Min(currentValue, maxValue);
             UpdateBarUI();
         }
+        if (currentValue == maxValue)
+        {
+            panel.SetActive(true);
+        }
+        else
+        {
+            panel.SetActive(false);
+        }
     }
 
     public bool TryUsePowerUp(float amount)
@@ -40,6 +54,7 @@ public class PowerUpBar : MonoBehaviour
         {
             currentValue -= amount;
             UpdateBarUI();
+            panel.SetActive(false);
             return true;
         }
         return false;
