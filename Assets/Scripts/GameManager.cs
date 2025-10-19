@@ -71,8 +71,8 @@ public class GameManager : MonoBehaviour
 
     public void RemoveFromRoom(Human human, int room)
     {
-        if (Rooms.ContainsKey(room)) Rooms[room].Remove(human);
-        if (Rooms[room].Count == 0) Rooms.Remove(room);
+        if (Rooms.ContainsKey(room) && Rooms[room] != null) Rooms[room].Remove(human);
+        if (Rooms.ContainsKey(room) && Rooms[room].Count == 0) Rooms.Remove(room);
     } 
 
     public void SetGasActivated(bool gasActivated)
