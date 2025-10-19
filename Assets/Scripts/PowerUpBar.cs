@@ -15,7 +15,7 @@ public class PowerUpBar : MonoBehaviour
     
     public float maxValue = 100f;
     // regeneration rate of powerup, variable based on the powerup
-    public float regenerationRate = 2f;
+    public float regenerationRate;
 
     // current recharge rate of powerup    
     private float currentValue;
@@ -23,9 +23,10 @@ public class PowerUpBar : MonoBehaviour
     void Start()
     {
         // Each resource starts at the max value.
-        currentValue = maxValue;
+        currentValue = 0f;
         slider.maxValue = maxValue;
         slider.value = currentValue;
+        panel.SetActive(true);
     }
 
     void Update()
@@ -40,11 +41,11 @@ public class PowerUpBar : MonoBehaviour
         }
         if (currentValue == maxValue)
         {
-            panel.SetActive(true);
+            panel.SetActive(false);
         }
         else
         {
-            panel.SetActive(false);
+            panel.SetActive(true);
         }
     }
 
@@ -54,7 +55,7 @@ public class PowerUpBar : MonoBehaviour
         {
             currentValue -= amount;
             UpdateBarUI();
-            panel.SetActive(false);
+            panel.SetActive(true);
             return true;
         }
         return false;
