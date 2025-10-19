@@ -12,20 +12,22 @@ public class GameManager : MonoBehaviour
 
     public Boolean GasActivated;
     public int Room;
-    public float originalSpeed = 2f;
+    public float originalSpeed = 1f;
     private Dictionary<int, List<Human>> Rooms;
 
     // Game state management
     private bool isGameOver = false;
 
     private Coroutine gasEffectCoroutine;
-    public float GasDuration = 5f;
+    public float GasDuration = 0.5f;
+
     private void Awake()
     {
         Instance = this;
         Room = 0;
         Rooms = new Dictionary<int, List<Human>>();
         DontDestroyOnLoad(gameObject);
+
     }
     
     public void TriggerGameOver()
@@ -101,7 +103,12 @@ public class GameManager : MonoBehaviour
                 Debug.Log("human speed: " + h.GetComponent<NavMeshAgent>().speed);
             }
 
-            yield return new WaitForSeconds(GasDuration);
+            Debug.Log("Start wait...");
+            Debug.Log("GameManager still active? " + gameObject.activeInHierarchy + " scene: " + SceneManager.GetActiveScene().name);
+
+            yield return new WaitForSecondsRealtime(GasDuration);
+
+            Debug.Log("done waiting");
 
             foreach(Human h in modifiedHumans)
             {

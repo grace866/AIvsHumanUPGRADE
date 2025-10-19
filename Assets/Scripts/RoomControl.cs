@@ -19,7 +19,8 @@ public class RoomControl : MonoBehaviour
     {
         if (other.CompareTag("Human"))
         {
-            //Debug.Log("in a new room " + roomNum);
+            Debug.Log("in a new room " + roomNum);
+            Debug.Log(other.gameObject.GetComponent<Human>());
             GameManager.Instance.AddToRooms(other.gameObject.GetComponent<Human>(), roomNum);
         }
     }
