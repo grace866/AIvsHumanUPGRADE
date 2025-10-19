@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
-using NUnit.Framework;
+//using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class GasHelper : MonoBehaviour
+public class GasHelper : MonoBehaviour, IPointerClickHandler
 {
     public int roomNum;
     void Start()
@@ -15,13 +16,10 @@ public class GasHelper : MonoBehaviour
     {
     }
 
-    private void OnMouseDown()
+    public void OnPointerClick(PointerEventData eventData)
     {
+        Debug.Log("onmousedown gashelper");
         GameManager.Instance.Room = roomNum;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        GameManager.Instance.AddToRooms(collision.gameObject.GetComponent<Human>(), roomNum);
+        PowerUpBar.Instance.UsePowerUp();
     }
 }

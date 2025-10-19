@@ -7,6 +7,8 @@ using Slider = UnityEngine.UI.Slider;
 
 public class PowerUpBar : MonoBehaviour
 {
+    public static PowerUpBar Instance { get; private set; }
+
     // the slider is the UI element that displays the resource bar, drag the ui component here in inspector
     public Slider slider;
     public string powerup;
@@ -20,8 +22,9 @@ public class PowerUpBar : MonoBehaviour
     // current recharge rate of powerup    
     private float currentValue;
 
-    void Start()
+    void Awake()
     {
+        Instance = this;
         // Each resource starts at the max value.
         currentValue = 0f;
         slider.maxValue = maxValue;
@@ -51,6 +54,7 @@ public class PowerUpBar : MonoBehaviour
 
     public void UsePowerUp()
     {
+        Debug.Log("using power up in powerupbar");
         GameManager.Instance.ActivateGas();
         currentValue = 0f;
         UpdateBarUI();
