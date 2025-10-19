@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 using Unity.VisualScripting;
 using UnityEngine.AI;
+using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -11,11 +12,15 @@ public class GameManager : MonoBehaviour
 
     public Boolean GasActivated;
     public int Room;
+    //public int originalSpeed = 2;
     private Dictionary<int, List<Human>> Rooms;
+    private int gasDuration = 30;
 
     // Game state management
     private bool isGameOver = false;
 
+    private Coroutine gasEffectCoroutine;
+    public float GasDuration = 30f;
     private void Awake()
     {
         Instance = this;
@@ -65,22 +70,44 @@ public class GameManager : MonoBehaviour
     {
         GasActivated = true;
         Debug.Log("activated gas");
+        // gas action
+        if (GasActivated && Room != 0)
+        {
+            gasEffectCoroutine = StartCoroutine(ApplyGasEffect(Room));
+        }
+
+    }
+
+    private IEnumerator ApplyGasEffect(int room)
+    {
+        Debug.Log("in coroutine");
+        List<Human> modifiedHumans = new List<Human>();
+
+        if (Rooms.ContainsKey(room))
+        {
+            foreach (Human h in Rooms[room])
+            {
+                Debug.Log("human");
+                modifiedHumans.Add(h);
+                h.GetComponent<NavMeshAgent>().speed /= 10;
+            }
+
+            yield return new WaitForSeconds(gasDuration);
+
+            foreach(Human h in modifiedHumans)
+            {
+                h.GetComponent <NavMeshAgent>().speed *= 10;
+            }
+        }
+        GasActivated = false;
+        gasEffectCoroutine = null;
     }
 
     public void Update()
     {
         // gas action
-        if (GasActivated && Room != 0)
-        {
-            Debug.Log(Rooms);
-            if (Rooms.ContainsKey(Room))
-            {
-                foreach (Human h in Rooms[Room])
-                {
-                    h.GetComponent<NavMeshAgent>().speed /= 2;
-                }
-                GasActivated = false;
-            }
-        }
+        
     }
+
+
 }
