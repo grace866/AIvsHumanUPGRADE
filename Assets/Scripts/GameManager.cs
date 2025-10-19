@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public Boolean GasActivated;
+    private Boolean InWinScene = false;
     public Boolean LaserActivated;
     public int Room;
     public float originalSpeed = 1f;
@@ -109,6 +110,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private IEnumerator switchToWinScene()
+    {
+        InWinScene = true;
+        yield return new WaitForSecondsRealtime(1f);
+        SceneManager.LoadScene("WinScene");
+    }
+
     public void ActivateGas()
     {
         GasActivated = true;
@@ -162,9 +170,9 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (Rooms.Count == 0)
+        if (Rooms.Count == 0 && !InWinScene)
         {
-            Debug.Log("YOU WON");
+            StartCoroutine(switchToWinScene());
         }
     }
 
