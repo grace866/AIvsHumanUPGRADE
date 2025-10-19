@@ -443,7 +443,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 5856981904466133357, guid: d451ec65ba72f450cabb338125476c7d, type: 3}
+  m_Sprite: {fileID: -2827147315405241775, guid: 7a182506ae5d6479fa8494b06e4a944d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2432,7 +2432,7 @@ GameObject:
   - component: {fileID: 242312541}
   - component: {fileID: 242312542}
   m_Layer: 0
-  m_Name: battery_0 (4)
+  m_Name: gas5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2482,7 +2482,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 5856981904466133357, guid: d451ec65ba72f450cabb338125476c7d, type: 3}
+  m_Sprite: {fileID: -2827147315405241775, guid: 7a182506ae5d6479fa8494b06e4a944d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2546,7 +2546,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 21, y: 22}
+    oldSize: {x: 22, y: 22}
     newSize: {x: 21, y: 22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5526,7 +5526,7 @@ GameObject:
   - component: {fileID: 799593117}
   - component: {fileID: 799593118}
   m_Layer: 0
-  m_Name: battery_0 (2)
+  m_Name: gas3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5576,7 +5576,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 5856981904466133357, guid: d451ec65ba72f450cabb338125476c7d, type: 3}
+  m_Sprite: {fileID: -2827147315405241775, guid: 7a182506ae5d6479fa8494b06e4a944d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5640,7 +5640,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 21, y: 22}
+    oldSize: {x: 22, y: 22}
     newSize: {x: 21, y: 22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5822,7 +5822,7 @@ GameObject:
   - component: {fileID: 824994652}
   - component: {fileID: 824994653}
   m_Layer: 0
-  m_Name: battery_0 (6)
+  m_Name: gas7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5872,7 +5872,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 5856981904466133357, guid: d451ec65ba72f450cabb338125476c7d, type: 3}
+  m_Sprite: {fileID: -2827147315405241775, guid: 7a182506ae5d6479fa8494b06e4a944d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5936,7 +5936,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 21, y: 22}
+    oldSize: {x: 22, y: 22}
     newSize: {x: 21, y: 22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9301,7 +9301,7 @@ GameObject:
   - component: {fileID: 1395339558}
   - component: {fileID: 1395339559}
   m_Layer: 0
-  m_Name: battery_0 (3)
+  m_Name: gas4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9351,7 +9351,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 5856981904466133357, guid: d451ec65ba72f450cabb338125476c7d, type: 3}
+  m_Sprite: {fileID: -2827147315405241775, guid: 7a182506ae5d6479fa8494b06e4a944d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9415,7 +9415,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 21, y: 22}
+    oldSize: {x: 22, y: 22}
     newSize: {x: 21, y: 22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9548,7 +9548,7 @@ GameObject:
   - component: {fileID: 1398841774}
   - component: {fileID: 1398841775}
   m_Layer: 0
-  m_Name: battery_0 (1)
+  m_Name: gas2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9598,7 +9598,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 5856981904466133357, guid: d451ec65ba72f450cabb338125476c7d, type: 3}
+  m_Sprite: {fileID: -2827147315405241775, guid: 7a182506ae5d6479fa8494b06e4a944d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9662,7 +9662,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 21, y: 22}
+    oldSize: {x: 22, y: 22}
     newSize: {x: 21, y: 22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -10165,7 +10165,7 @@ GameObject:
   - component: {fileID: 1455310123}
   - component: {fileID: 1455310124}
   m_Layer: 0
-  m_Name: battery_0
+  m_Name: gas1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10215,7 +10215,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 5856981904466133357, guid: d451ec65ba72f450cabb338125476c7d, type: 3}
+  m_Sprite: {fileID: -2827147315405241775, guid: 7a182506ae5d6479fa8494b06e4a944d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -10279,7 +10279,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 21, y: 22}
+    oldSize: {x: 22, y: 22}
     newSize: {x: 21, y: 22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -13564,7 +13564,7 @@ GameObject:
   - component: {fileID: 2065752729}
   - component: {fileID: 2065752730}
   m_Layer: 0
-  m_Name: battery_0 (5)
+  m_Name: gas6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13614,7 +13614,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 5856981904466133357, guid: d451ec65ba72f450cabb338125476c7d, type: 3}
+  m_Sprite: {fileID: -2827147315405241775, guid: 7a182506ae5d6479fa8494b06e4a944d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13678,7 +13678,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 21, y: 22}
+    oldSize: {x: 22, y: 22}
     newSize: {x: 21, y: 22}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
