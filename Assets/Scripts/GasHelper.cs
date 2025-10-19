@@ -7,15 +7,6 @@ using UnityEngine.EventSystems;
 public class GasHelper : MonoBehaviour, IPointerClickHandler
 {
     public int roomNum;
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("onmousedown gashelper");

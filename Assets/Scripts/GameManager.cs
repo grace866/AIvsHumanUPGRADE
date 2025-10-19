@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public Boolean GasActivated;
+    public Boolean LaserActivated;
     public int Room;
     public float originalSpeed = 1f;
     private Dictionary<int, List<Human>> Rooms;
@@ -27,9 +28,8 @@ public class GameManager : MonoBehaviour
         Room = 0;
         Rooms = new Dictionary<int, List<Human>>();
         DontDestroyOnLoad(gameObject);
-
     }
-    
+
     public void TriggerGameOver()
     {
         // Prevent multiple game over triggers
@@ -72,6 +72,20 @@ public class GameManager : MonoBehaviour
     {
         GasActivated = gasActivated;
     }
+
+    public void ActivateLaser()
+    {
+        LaserActivated = true;
+        if (LaserActivated && Room != 0)
+        {
+            foreach (Human h in Rooms[Room])
+            {
+                Rooms[Room].Remove(h);
+                Destroy(h);
+            }
+        }
+    }
+
     public void ActivateGas()
     {
         GasActivated = true;
@@ -125,8 +139,7 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        // gas action
-        
+        if (Rooms.Count == 0) Debug.Log("YOU WON");
     }
 
 

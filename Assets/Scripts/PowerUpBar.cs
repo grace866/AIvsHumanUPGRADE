@@ -52,7 +52,7 @@ public class PowerUpBar : MonoBehaviour
         }
     }
 
-    public void UsePowerUp()
+    public void UsePowerUp() // need to change to useGas
     {
         Debug.Log("using power up in powerupbar");
         GameManager.Instance.ActivateGas();
@@ -67,6 +67,14 @@ public class PowerUpBar : MonoBehaviour
         //    return true;
         //}
         //return false;
+    }
+
+    public void UseLaser()
+    {
+        GameManager.Instance.ActivateLaser();
+        currentValue = 0f;
+        UpdateBarUI();
+        panel.SetActive(true);
     }
 
     private void UpdateBarUI()
