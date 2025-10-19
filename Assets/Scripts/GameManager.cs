@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
 
     public void TriggerGameOver()
     {
+        InWinScene = true;
         // Prevent multiple game over triggers
         if (isGameOver)
             return;
