@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 21228559}
   - component: {fileID: 21228558}
   - component: {fileID: 21228560}
+  - component: {fileID: 21228561}
   m_Layer: 0
   m_Name: Room8
   m_TagString: Untagged
@@ -253,6 +254,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &21228561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21228557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 8
 --- !u!1 &26794257
 GameObject:
   m_ObjectHideFlags: 0
@@ -385,6 +399,7 @@ GameObject:
   - component: {fileID: 33112613}
   - component: {fileID: 33112612}
   - component: {fileID: 33112614}
+  - component: {fileID: 33112615}
   m_Layer: 0
   m_Name: Room17
   m_TagString: Untagged
@@ -508,6 +523,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &33112615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33112611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 17
 --- !u!1 &33864940
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,6 +1531,7 @@ GameObject:
   - component: {fileID: 197682114}
   - component: {fileID: 197682113}
   - component: {fileID: 197682115}
+  - component: {fileID: 197682116}
   m_Layer: 0
   m_Name: Room12
   m_TagString: Untagged
@@ -1626,6 +1655,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &197682116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197682112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 12
 --- !u!1 &204248185
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,6 +1991,7 @@ GameObject:
   - component: {fileID: 244708643}
   - component: {fileID: 244708642}
   - component: {fileID: 244708644}
+  - component: {fileID: 244708645}
   m_Layer: 0
   m_Name: Room5
   m_TagString: Untagged
@@ -2072,6 +2115,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &244708645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244708641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 5
 --- !u!1 &252569645
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,6 +2139,7 @@ GameObject:
   - component: {fileID: 252569647}
   - component: {fileID: 252569646}
   - component: {fileID: 252569648}
+  - component: {fileID: 252569649}
   m_Layer: 0
   m_Name: Room4
   m_TagString: Untagged
@@ -2206,6 +2263,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &252569649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252569645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 4
 --- !u!1 &255531311
 GameObject:
   m_ObjectHideFlags: 0
@@ -2304,6 +2374,7 @@ GameObject:
   - component: {fileID: 262825319}
   - component: {fileID: 262825318}
   - component: {fileID: 262825320}
+  - component: {fileID: 262825321}
   m_Layer: 0
   m_Name: Room14
   m_TagString: Untagged
@@ -2427,6 +2498,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &262825321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 262825317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 14
 --- !u!1 &274658436
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,6 +2626,7 @@ GameObject:
   - component: {fileID: 279462079}
   - component: {fileID: 279462078}
   - component: {fileID: 279462080}
+  - component: {fileID: 279462081}
   m_Layer: 0
   m_Name: Room6
   m_TagString: Untagged
@@ -2665,6 +2750,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &279462081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279462077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 6
 --- !u!1 &313002423
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 479718122}
-  - component: {fileID: 479718121}
+  - component: {fileID: 479718123}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3480,19 +3578,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &479718121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479718120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0edee8197a3449908af6451f5b62c05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverPanel: {fileID: 1660576689}
 --- !u!4 &479718122
 Transform:
   m_ObjectHideFlags: 0
@@ -3508,6 +3593,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479718123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479718120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0edee8197a3449908af6451f5b62c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 1660576689}
+  GasActivated: 0
+  Room: 0
 --- !u!1 &513890363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,6 +3723,7 @@ GameObject:
   - component: {fileID: 523544387}
   - component: {fileID: 523544386}
   - component: {fileID: 523544388}
+  - component: {fileID: 523544389}
   m_Layer: 0
   m_Name: Room11
   m_TagString: Untagged
@@ -3746,6 +3847,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &523544389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523544385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 11
 --- !u!1 &549891149
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,6 +4166,7 @@ GameObject:
   - component: {fileID: 608572871}
   - component: {fileID: 608572870}
   - component: {fileID: 608572872}
+  - component: {fileID: 608572873}
   m_Layer: 0
   m_Name: Room15
   m_TagString: Untagged
@@ -4175,6 +4290,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &608572873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608572869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 15
 --- !u!1 &616760270
 GameObject:
   m_ObjectHideFlags: 0
@@ -4885,6 +5013,7 @@ GameObject:
   - component: {fileID: 801519059}
   - component: {fileID: 801519058}
   - component: {fileID: 801519060}
+  - component: {fileID: 801519061}
   m_Layer: 0
   m_Name: Room3
   m_TagString: Untagged
@@ -5008,6 +5137,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &801519061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801519057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 3
 --- !u!1 &824994649
 GameObject:
   m_ObjectHideFlags: 0
@@ -5358,6 +5500,7 @@ GameObject:
   - component: {fileID: 869426988}
   - component: {fileID: 869426987}
   - component: {fileID: 869426989}
+  - component: {fileID: 869426990}
   m_Layer: 0
   m_Name: Room7
   m_TagString: Untagged
@@ -5481,6 +5624,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &869426990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869426986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 7
 --- !u!1 &875711088
 GameObject:
   m_ObjectHideFlags: 0
@@ -6976,6 +7132,7 @@ GameObject:
   - component: {fileID: 1120096623}
   - component: {fileID: 1120096622}
   - component: {fileID: 1120096624}
+  - component: {fileID: 1120096625}
   m_Layer: 0
   m_Name: Room19
   m_TagString: Untagged
@@ -7099,6 +7256,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1120096625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120096621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 19
 --- !u!1 &1139374223
 GameObject:
   m_ObjectHideFlags: 0
@@ -7110,6 +7280,7 @@ GameObject:
   - component: {fileID: 1139374225}
   - component: {fileID: 1139374224}
   - component: {fileID: 1139374226}
+  - component: {fileID: 1139374227}
   m_Layer: 0
   m_Name: Room10
   m_TagString: Untagged
@@ -7233,6 +7404,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1139374227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139374223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 10
 --- !u!1 &1141495529
 GameObject:
   m_ObjectHideFlags: 0
@@ -7244,6 +7428,7 @@ GameObject:
   - component: {fileID: 1141495531}
   - component: {fileID: 1141495530}
   - component: {fileID: 1141495532}
+  - component: {fileID: 1141495533}
   m_Layer: 0
   m_Name: Room13
   m_TagString: Untagged
@@ -7367,6 +7552,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1141495533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141495529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 13
 --- !u!1 &1158514860
 GameObject:
   m_ObjectHideFlags: 0
@@ -8025,6 +8223,7 @@ GameObject:
   - component: {fileID: 1230848135}
   - component: {fileID: 1230848134}
   - component: {fileID: 1230848136}
+  - component: {fileID: 1230848137}
   m_Layer: 0
   m_Name: Room9
   m_TagString: Untagged
@@ -8148,6 +8347,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1230848137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230848133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 9
 --- !u!1 &1247202432
 GameObject:
   m_ObjectHideFlags: 0
@@ -8472,6 +8684,7 @@ GameObject:
   - component: {fileID: 1346696510}
   - component: {fileID: 1346696509}
   - component: {fileID: 1346696508}
+  - component: {fileID: 1346696511}
   m_Layer: 0
   m_Name: Room2 (1)
   m_TagString: Untagged
@@ -8611,6 +8824,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1346696511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346696506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 0
 --- !u!1 &1395339555
 GameObject:
   m_ObjectHideFlags: 0
@@ -9519,6 +9745,7 @@ GameObject:
   - component: {fileID: 1554312025}
   - component: {fileID: 1554312024}
   - component: {fileID: 1554312026}
+  - component: {fileID: 1554312027}
   m_Layer: 0
   m_Name: Room1
   m_TagString: Untagged
@@ -9642,6 +9869,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1554312027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554312023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 1
 --- !u!1 &1575935843
 GameObject:
   m_ObjectHideFlags: 0
@@ -11396,6 +11636,7 @@ GameObject:
   - component: {fileID: 1889233821}
   - component: {fileID: 1889233820}
   - component: {fileID: 1889233822}
+  - component: {fileID: 1889233823}
   m_Layer: 0
   m_Name: Room18
   m_TagString: Untagged
@@ -11519,6 +11760,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1889233823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889233819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 18
 --- !u!1 &1903970783
 GameObject:
   m_ObjectHideFlags: 0
@@ -12322,6 +12576,7 @@ GameObject:
   - component: {fileID: 2086038301}
   - component: {fileID: 2086038300}
   - component: {fileID: 2086038302}
+  - component: {fileID: 2086038303}
   m_Layer: 0
   m_Name: Room16
   m_TagString: Untagged
@@ -12445,6 +12700,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2086038303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086038299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 16
 --- !u!1 &2089631359
 GameObject:
   m_ObjectHideFlags: 0
@@ -12679,6 +12947,7 @@ GameObject:
   - component: {fileID: 2109289790}
   - component: {fileID: 2109289789}
   - component: {fileID: 2109289791}
+  - component: {fileID: 2109289792}
   m_Layer: 0
   m_Name: Room2
   m_TagString: Untagged
@@ -12802,6 +13071,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2109289792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109289788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84fd81d296835ca42912995afae493d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNum: 2
 --- !u!1 &2123358455
 GameObject:
   m_ObjectHideFlags: 0

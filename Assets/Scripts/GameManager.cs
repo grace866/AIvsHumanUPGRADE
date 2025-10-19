@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -5,7 +7,10 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public GameObject gameOverPanel;
-    
+    public Boolean GasActivated;
+    public int Room;
+    private Dictionary<int, List<Human>> Rooms;
+
     // Game state management
     private bool isGameOver = false;
     private bool hasGameOverPanelShown = false;
@@ -13,6 +18,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Room = 0;
         
         // Ensure game over panel starts hidden
         if (gameOverPanel != null)
@@ -58,6 +64,17 @@ public class GameManager : MonoBehaviour
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(false);
+        }
+    }
+
+    public void Update()
+    {
+        if (GasActivated && Room != 0)
+        {
+            foreach (Human h in Rooms[Room])
+            {
+                Destroy(h);
+            }
         }
     }
 }
