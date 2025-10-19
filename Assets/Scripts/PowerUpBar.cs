@@ -52,7 +52,7 @@ public class PowerUpBar : MonoBehaviour
         }
     }
 
-    public void UsePowerUp() // need to change to useGas
+    public void UseGas() // need to change to useGas
     {
         Debug.Log("using power up in powerupbar");
         GameManager.Instance.ActivateGas();

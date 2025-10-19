@@ -24,4 +24,14 @@ public class RoomControl : MonoBehaviour
             GameManager.Instance.AddToRooms(other.gameObject.GetComponent<Human>(), roomNum);
         }
     }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Human"))
+        {
+            Debug.Log("in a new room " + roomNum);
+            Debug.Log(other.gameObject.GetComponent<Human>());
+            GameManager.Instance.RemoveFromRoom(other.gameObject.GetComponent<Human>(), roomNum);
+        }
+    }
 }

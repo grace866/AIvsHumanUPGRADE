@@ -68,20 +68,43 @@ public class GameManager : MonoBehaviour
         Rooms[room].Add(h);
     }
 
+    public void RemoveFromRoom(Human human, int room)
+    {
+        if (Rooms.ContainsKey(room)) Rooms[room].Remove(human);
+        if (Rooms[room].Count == 0) Rooms.Remove(room);
+    } 
+
     public void SetGasActivated(bool gasActivated)
     {
         GasActivated = gasActivated;
     }
 
+    public void SetLaserActivated(bool laserActivated)
+    {
+        LaserActivated = laserActivated;
+        Debug.Log("laser activated");
+    }
+
     public void ActivateLaser()
     {
+        Debug.Log("in activate laser");
         LaserActivated = true;
         if (LaserActivated && Room != 0)
         {
             foreach (Human h in Rooms[Room])
             {
-                Rooms[Room].Remove(h);
-                Destroy(h);
+                Debug.Log("in loop");
+                h.Die();
+                h.GetComponent<NavMeshAgent>().speed = 0;
+                //Rooms[Room].Remove(h);
+                //Destroy(h);
+                //animator.GetComponent<Animator>().SetBool("isDead", true);
+            }
+            Rooms.Remove(Room);
+            foreach (int r in Rooms.Keys)
+            {
+                Debug.Log(r);
+                Debug.Log(Rooms[r].Count);
             }
         }
     }
@@ -139,7 +162,10 @@ public class GameManager : MonoBehaviour
 
     public void Update()
     {
-        if (Rooms.Count == 0) Debug.Log("YOU WON");
+        if (Rooms.Count == 0)
+        {
+            Debug.Log("YOU WON");
+        }
     }
 
 

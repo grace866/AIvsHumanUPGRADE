@@ -5,6 +5,7 @@ public class Human : MonoBehaviour
 {
     [SerializeField] Transform target;
     NavMeshAgent agent;
+    public Animator animator;
 
     void Awake()
     {
@@ -22,6 +23,11 @@ public class Human : MonoBehaviour
 
         agent.ResetPath();
         agent.SetDestination(target.position);
+    }
+
+    public void Die()
+    {
+        animator.GetComponent<Animator>().SetBool("isDead", true);
     }
 
 }
