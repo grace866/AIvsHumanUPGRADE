@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         Room = 0;
+        Rooms = new Dictionary<int, List<Human>>();
         
         // Ensure game over panel starts hidden
         if (gameOverPanel != null)
@@ -67,13 +69,31 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void AddToRooms(Human h, int room)
+    {
+        if (!Rooms.ContainsKey(room)) Rooms.Add(room, new List<Human>());
+        Rooms[room].Add(h);
+    }
+
+    public void ActivateGas()
+    {
+        GasActivated = true;
+        Debug.Log("activated gas");
+    }
+
     public void Update()
     {
+        // gas action
         if (GasActivated && Room != 0)
         {
-            foreach (Human h in Rooms[Room])
+            Debug.Log(Rooms);
+            if (Rooms.ContainsKey(Room))
             {
-                Destroy(h);
+                foreach (Human h in Rooms[Room])
+                {
+                    Destroy(h);
+                }
+                GasActivated = false;
             }
         }
     }

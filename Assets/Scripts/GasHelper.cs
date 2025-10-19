@@ -19,4 +19,9 @@ public class GasHelper : MonoBehaviour
     {
         GameManager.Instance.Room = roomNum;
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GameManager.Instance.AddToRooms(collision.gameObject.GetComponent<Human>(), roomNum);
+    }
 }
