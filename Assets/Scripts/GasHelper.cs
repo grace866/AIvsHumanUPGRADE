@@ -11,6 +11,7 @@ public class GasHelper : MonoBehaviour, IPointerClickHandler
     {
         Debug.Log("onmousedown gashelper");
         GameManager.Instance.Room = roomNum;
-        PowerUpBar.Instance.UseGas();
+        GameObject gasObject = GameObject.FindWithTag("GasSystem");
+        gasObject.GetComponent<PowerUpBar>().UseGas();
     }
 }

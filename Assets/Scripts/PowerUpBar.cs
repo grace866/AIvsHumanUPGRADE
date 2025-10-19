@@ -11,6 +11,7 @@ public class PowerUpBar : MonoBehaviour
 
     // the slider is the UI element that displays the resource bar, drag the ui component here in inspector
     public Slider slider;
+
     public string powerup;
     public Button button;
     public GameObject panel; // set active or inactive
@@ -73,6 +74,7 @@ public class PowerUpBar : MonoBehaviour
     {
         GameManager.Instance.ActivateLaser();
         currentValue = 0f;
+        Debug.Log(currentValue);
         UpdateBarUI();
         panel.SetActive(true);
     }

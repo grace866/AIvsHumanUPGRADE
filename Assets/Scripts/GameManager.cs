@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     private Boolean InWinScene = false;
     public Boolean LaserActivated;
     public int Room;
-    public float originalSpeed = 0.5f;
+    public float originalSpeed = 0.75f;
     private Dictionary<int, List<Human>> Rooms;
 
     // Game state management

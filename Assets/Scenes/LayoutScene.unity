@@ -8696,7 +8696,7 @@ GameObject:
   - component: {fileID: 1209015833}
   m_Layer: 5
   m_Name: Gas
-  m_TagString: Untagged
+  m_TagString: GasSystem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9071,7 +9071,7 @@ GameObject:
   - component: {fileID: 1271262957}
   m_Layer: 5
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: LaserSystem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

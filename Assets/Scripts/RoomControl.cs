@@ -19,9 +19,13 @@ public class RoomControl : MonoBehaviour
     {
         if (other.CompareTag("Human"))
         {
-            Debug.Log("in a new room " + roomNum);
-            Debug.Log(other.gameObject.GetComponent<Human>());
-            GameManager.Instance.AddToRooms(other.gameObject.GetComponent<Human>(), roomNum);
+            Human h = other.gameObject.GetComponent<Human>();
+            if (h != null)
+            {
+                Debug.Log("in a new room " + roomNum);
+                Debug.Log(other.gameObject.GetComponent<Human>());
+                GameManager.Instance.AddToRooms(other.gameObject.GetComponent<Human>(), roomNum);
+            }
         }
     }
 
@@ -29,9 +33,13 @@ public class RoomControl : MonoBehaviour
     {
         if (other.CompareTag("Human"))
         {
-            Debug.Log("in a new room " + roomNum);
-            Debug.Log(other.gameObject.GetComponent<Human>());
-            GameManager.Instance.RemoveFromRoom(other.gameObject.GetComponent<Human>(), roomNum);
+            Human h = other.gameObject.GetComponent<Human>();
+            if (h != null)
+            {
+                Debug.Log("in a new room " + roomNum);
+                Debug.Log(other.gameObject.GetComponent<Human>());
+                GameManager.Instance.RemoveFromRoom(other.gameObject.GetComponent<Human>(), roomNum);
+            }
         }
     }
 }

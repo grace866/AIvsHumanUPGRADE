@@ -8,7 +8,8 @@ public class LaserHelper : MonoBehaviour, IPointerClickHandler
     {
         Debug.Log("onmousedown laserhelper");
         GameManager.Instance.Room = roomNum;
-        PowerUpBar.Instance.UseLaser();
+        GameObject laserObject = GameObject.FindWithTag("LaserSystem");
+        laserObject.GetComponent<PowerUpBar>().UseLaser();
     }
 
 }
